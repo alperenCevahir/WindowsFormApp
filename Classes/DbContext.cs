@@ -19,10 +19,6 @@ namespace KuzeyYildizi.Classes
         {
             optionsBuilder.UseSqlServer(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Alperen\source\repos\KuzeyYildizi\KuzeyYildiziDB.mdf;Integrated Security=True"" providerName=""System.Data.SqlClient");
         }
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Custodian>()
-                .HasMany(c => c.Students);
-        }
+        
     }
 }

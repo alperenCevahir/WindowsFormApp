@@ -28,18 +28,11 @@ namespace KuzeyYildizi.Classes
             }
         }
         public int StudentId { get; set; }
-        public List<Student> Students { get; set; }
-
+        public Student Student { get; set; }
         public bool IsCustodian { get; set; }
-
-        public bool IsFather { get; set; }
         public string Name { get; set; }
-        public string Surname { get; set; }
-
-       
-
+        public string Surname { get; set; } 
         private int? _telNo;
-
         public int? TelNo
         {
             get { return _telNo; }
@@ -52,13 +45,23 @@ namespace KuzeyYildizi.Classes
                 _telNo = value;
             }
         }
-
         public string Occupation { get; set; }
-
         public string Address { get; set; }
-
         public bool ParentsLiveTogether { get; set; }
 
-
+        public Custodian(int tcNo, Student student, bool isCustodian, string name,
+            string surname, int telNo, string occupation, string address, bool parentsLiveTogether)
+        {
+            TcNo = tcNo;
+            Student = student;
+            StudentId = student.TcNo;
+            IsCustodian = isCustodian;
+            Name = name;
+            Surname = surname;
+            TelNo = telNo;
+            Occupation = occupation;
+            Address = address;
+            ParentsLiveTogether = parentsLiveTogether;
+        }
     }
 }

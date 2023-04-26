@@ -191,12 +191,38 @@ namespace KuzeyYildizi.Forms
             public override Custodian CreateMother(Student student)
             {
                 // Create a new custodian object with the input values
-                throw new NotImplementedException();
+                string Name = _form.MotherNameTxt.Text;
+                string Surname = _form.MotherSurnameTxt.Text;
+                Student Student = student;
+                int TcNo = Int32.Parse(_form.MotherTcTxt.Text);
+                int TelNo = Int32.Parse(_form.MotherTelNoTxt.Text);
+                bool isCustodian = false;
+                if (_form.MotherCmBox.Text == "Evet") {
+                    isCustodian = true;
+                }
+                string Occupation = _form.OccupationTxt.Text;
+                string Adress = _form.MotherAdresTxt.Text;
+                bool ParentsLiveTogether = _form.LivesTogetherCheckBox.Checked;
+
+                return new Custodian(TcNo,student,isCustodian,Name,Surname,TelNo,Occupation,Adress,ParentsLiveTogether);
             }
             public override Custodian CreateFather(Student student)
             {
-                // Create a new custodian object with the input values
-                throw new NotImplementedException();
+                string Name = _form.FatherNameTxt.Text;
+                string Surname = _form.FatherSurnameTxt.Text;
+                Student Student = student;
+                int TcNo = Int32.Parse(_form.FatherTcTxt.Text);
+                int TelNo = Int32.Parse(_form.FatherTelNoTxt.Text);
+                bool isCustodian = false;
+                if (_form.FatherCmBox.Text == "Evet")
+                {
+                    isCustodian = true;
+                }
+                string Occupation = _form.FatherOccupationTxt.Text;
+                string Adress = _form.FatherAdressTxt.Text;
+                bool ParentsLiveTogether = _form.LivesTogetherCheckBox.Checked;
+
+                return new Custodian(TcNo, student, isCustodian, Name, Surname, TelNo, Occupation, Adress, ParentsLiveTogether);
             }
         }
 
