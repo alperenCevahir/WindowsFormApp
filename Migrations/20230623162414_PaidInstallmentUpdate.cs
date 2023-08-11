@@ -5,25 +5,25 @@
 namespace KuzeyYildizi.Migrations
 {
     /// <inheritdoc />
-    public partial class AddMonthlyAmountProperty3 : Migration
+    public partial class PaidInstallmentUpdate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AddColumn<string>(
-                name: "PaymentWeek",
-                table: "Payment",
-                type: "nvarchar(max)",
+            migrationBuilder.AddColumn<int>(
+                name: "PaidInstallment",
+                table: "students",
+                type: "int",
                 nullable: false,
-                defaultValue: "");
+                defaultValue: 0);
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(
-                name: "PaymentWeek",
-                table: "Payment");
+                name: "PaidInstallment",
+                table: "students");
         }
     }
 }

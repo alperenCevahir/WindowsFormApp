@@ -63,14 +63,10 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.OccupationTxt = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.MotherCmBox = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
             this.MotherAdresTxt = new System.Windows.Forms.TextBox();
             this.FatherTelNoTxt = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.FatherCmBox = new System.Windows.Forms.ComboBox();
-            this.label21 = new System.Windows.Forms.Label();
             this.FatherOccupationTxt = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
@@ -117,10 +113,46 @@
             this.label43 = new System.Windows.Forms.Label();
             this.TotalTxt = new System.Windows.Forms.TextBox();
             this.label44 = new System.Windows.Forms.Label();
-            this.InstallmentCmBox = new System.Windows.Forms.ComboBox();
             this.label45 = new System.Windows.Forms.Label();
-            this.PaymentWeekTxt = new System.Windows.Forms.TextBox();
             this.AddStudentButton = new System.Windows.Forms.Button();
+            this.printButton = new System.Windows.Forms.Button();
+            this.FoodCheckBx = new System.Windows.Forms.CheckBox();
+            this.CashCheckBox = new System.Windows.Forms.CheckBox();
+            this.CreditCardCheckBox = new System.Windows.Forms.CheckBox();
+            this.TransferCheckBox = new System.Windows.Forms.CheckBox();
+            this.label46 = new System.Windows.Forms.Label();
+            this.fatherworkingplacetxt = new System.Windows.Forms.TextBox();
+            this.label47 = new System.Windows.Forms.Label();
+            this.motherworkingplacetxt = new System.Windows.Forms.TextBox();
+            this.label48 = new System.Windows.Forms.Label();
+            this.notetxt = new System.Windows.Forms.TextBox();
+            this.MotherIsCustodianCheckBox = new System.Windows.Forms.CheckBox();
+            this.FatherIsCustodianCheckBox = new System.Windows.Forms.CheckBox();
+            this.InstallmentTxt = new System.Windows.Forms.TextBox();
+            this.installmentPaymentWeekCmbox = new System.Windows.Forms.ComboBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.KresPrint = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -139,7 +171,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(98, 54);
+            this.label3.Location = new System.Drawing.Point(98, 53);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(47, 28);
             this.label3.TabIndex = 2;
@@ -159,7 +191,7 @@
             // nameTxt
             // 
             this.nameTxt.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.nameTxt.Location = new System.Drawing.Point(220, 55);
+            this.nameTxt.Location = new System.Drawing.Point(219, 55);
             this.nameTxt.Name = "nameTxt";
             this.nameTxt.Size = new System.Drawing.Size(189, 27);
             this.nameTxt.TabIndex = 4;
@@ -180,7 +212,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(84, 87);
+            this.label6.Location = new System.Drawing.Point(56, 87);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(144, 28);
             this.label6.TabIndex = 8;
@@ -199,7 +231,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(804, 52);
+            this.label7.Location = new System.Drawing.Point(836, 52);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(61, 28);
             this.label7.TabIndex = 10;
@@ -208,7 +240,7 @@
             // tcNoTxt
             // 
             this.tcNoTxt.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.tcNoTxt.Location = new System.Drawing.Point(929, 54);
+            this.tcNoTxt.Location = new System.Drawing.Point(929, 53);
             this.tcNoTxt.Name = "tcNoTxt";
             this.tcNoTxt.Size = new System.Drawing.Size(189, 27);
             this.tcNoTxt.TabIndex = 11;
@@ -230,7 +262,7 @@
             // BirthPlaceAndYearTxt
             // 
             this.BirthPlaceAndYearTxt.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.BirthPlaceAndYearTxt.Location = new System.Drawing.Point(220, 88);
+            this.BirthPlaceAndYearTxt.Location = new System.Drawing.Point(219, 88);
             this.BirthPlaceAndYearTxt.Name = "BirthPlaceAndYearTxt";
             this.BirthPlaceAndYearTxt.Size = new System.Drawing.Size(189, 27);
             this.BirthPlaceAndYearTxt.TabIndex = 13;
@@ -242,7 +274,7 @@
             this.genderComboBox.Items.AddRange(new object[] {
             "Erkek",
             "Kız"});
-            this.genderComboBox.Location = new System.Drawing.Point(1238, 54);
+            this.genderComboBox.Location = new System.Drawing.Point(1238, 53);
             this.genderComboBox.Name = "genderComboBox";
             this.genderComboBox.Size = new System.Drawing.Size(189, 28);
             this.genderComboBox.TabIndex = 15;
@@ -262,7 +294,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(804, 88);
+            this.label4.Location = new System.Drawing.Point(833, 87);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 28);
             this.label4.TabIndex = 17;
@@ -302,7 +334,7 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(107, 117);
+            this.label9.Location = new System.Drawing.Point(85, 121);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(105, 28);
             this.label9.TabIndex = 21;
@@ -311,7 +343,7 @@
             // BloodTypeTxt
             // 
             this.BloodTypeTxt.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.BloodTypeTxt.Location = new System.Drawing.Point(220, 121);
+            this.BloodTypeTxt.Location = new System.Drawing.Point(219, 121);
             this.BloodTypeTxt.Name = "BloodTypeTxt";
             this.BloodTypeTxt.Size = new System.Drawing.Size(189, 27);
             this.BloodTypeTxt.TabIndex = 22;
@@ -330,10 +362,11 @@
             // TelNoTxt
             // 
             this.TelNoTxt.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.TelNoTxt.Location = new System.Drawing.Point(571, 118);
+            this.TelNoTxt.Location = new System.Drawing.Point(571, 117);
             this.TelNoTxt.Name = "TelNoTxt";
             this.TelNoTxt.Size = new System.Drawing.Size(189, 27);
             this.TelNoTxt.TabIndex = 24;
+            this.TelNoTxt.TextChanged += new System.EventHandler(this.TelNoTxt_TextChanged);
             this.TelNoTxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TelNoTxt_KeyPress);
             // 
             // DiseaseTxt
@@ -357,7 +390,7 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(1124, 117);
+            this.label11.Location = new System.Drawing.Point(1125, 117);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(105, 28);
             this.label11.TabIndex = 27;
@@ -379,7 +412,7 @@
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(700, 148);
+            this.label13.Location = new System.Drawing.Point(699, 181);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(169, 41);
             this.label13.TabIndex = 29;
@@ -399,7 +432,7 @@
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label14.Location = new System.Drawing.Point(807, 242);
+            this.label14.Location = new System.Drawing.Point(847, 245);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(61, 28);
             this.label14.TabIndex = 35;
@@ -418,7 +451,7 @@
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label15.Location = new System.Drawing.Point(466, 246);
+            this.label15.Location = new System.Drawing.Point(466, 245);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(80, 28);
             this.label15.TabIndex = 33;
@@ -427,7 +460,7 @@
             // MotherNameTxt
             // 
             this.MotherNameTxt.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.MotherNameTxt.Location = new System.Drawing.Point(220, 246);
+            this.MotherNameTxt.Location = new System.Drawing.Point(219, 245);
             this.MotherNameTxt.Name = "MotherNameTxt";
             this.MotherNameTxt.Size = new System.Drawing.Size(189, 27);
             this.MotherNameTxt.TabIndex = 32;
@@ -437,7 +470,7 @@
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.Location = new System.Drawing.Point(98, 242);
+            this.label16.Location = new System.Drawing.Point(143, 242);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(47, 28);
             this.label16.TabIndex = 31;
@@ -448,7 +481,7 @@
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label17.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label17.Location = new System.Drawing.Point(220, 205);
+            this.label17.Location = new System.Drawing.Point(219, 205);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(82, 38);
             this.label17.TabIndex = 37;
@@ -460,7 +493,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(1149, 245);
+            this.label2.Location = new System.Drawing.Point(1131, 245);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 28);
             this.label2.TabIndex = 38;
@@ -474,35 +507,12 @@
             this.OccupationTxt.Size = new System.Drawing.Size(189, 27);
             this.OccupationTxt.TabIndex = 39;
             // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label18.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label18.Location = new System.Drawing.Point(98, 275);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(92, 28);
-            this.label18.TabIndex = 40;
-            this.label18.Text = "Velisi mi?";
-            // 
-            // MotherCmBox
-            // 
-            this.MotherCmBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.MotherCmBox.FormattingEnabled = true;
-            this.MotherCmBox.Items.AddRange(new object[] {
-            "Evet",
-            "Hayır"});
-            this.MotherCmBox.Location = new System.Drawing.Point(220, 279);
-            this.MotherCmBox.Name = "MotherCmBox";
-            this.MotherCmBox.Size = new System.Drawing.Size(189, 28);
-            this.MotherCmBox.TabIndex = 41;
-            // 
             // label19
             // 
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label19.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label19.Location = new System.Drawing.Point(807, 279);
+            this.label19.Location = new System.Drawing.Point(846, 279);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(62, 28);
             this.label19.TabIndex = 42;
@@ -513,7 +523,7 @@
             this.MotherAdresTxt.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.MotherAdresTxt.Location = new System.Drawing.Point(929, 276);
             this.MotherAdresTxt.Name = "MotherAdresTxt";
-            this.MotherAdresTxt.Size = new System.Drawing.Size(498, 27);
+            this.MotherAdresTxt.Size = new System.Drawing.Size(189, 27);
             this.MotherAdresTxt.TabIndex = 43;
             // 
             // FatherTelNoTxt
@@ -536,29 +546,6 @@
             this.label20.TabIndex = 55;
             this.label20.Text = "Tel No";
             // 
-            // FatherCmBox
-            // 
-            this.FatherCmBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.FatherCmBox.FormattingEnabled = true;
-            this.FatherCmBox.Items.AddRange(new object[] {
-            "Evet",
-            "Hayır"});
-            this.FatherCmBox.Location = new System.Drawing.Point(220, 387);
-            this.FatherCmBox.Name = "FatherCmBox";
-            this.FatherCmBox.Size = new System.Drawing.Size(189, 28);
-            this.FatherCmBox.TabIndex = 54;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label21.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label21.Location = new System.Drawing.Point(98, 387);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(92, 28);
-            this.label21.TabIndex = 53;
-            this.label21.Text = "Velisi mi?";
-            // 
             // FatherOccupationTxt
             // 
             this.FatherOccupationTxt.BackColor = System.Drawing.SystemColors.InactiveCaption;
@@ -572,7 +559,7 @@
             this.label22.AutoSize = true;
             this.label22.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label22.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label22.Location = new System.Drawing.Point(1149, 351);
+            this.label22.Location = new System.Drawing.Point(1131, 350);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(80, 28);
             this.label22.TabIndex = 51;
@@ -583,7 +570,7 @@
             this.label23.AutoSize = true;
             this.label23.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label23.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label23.Location = new System.Drawing.Point(220, 310);
+            this.label23.Location = new System.Drawing.Point(219, 309);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(77, 38);
             this.label23.TabIndex = 50;
@@ -603,7 +590,7 @@
             this.label24.AutoSize = true;
             this.label24.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label24.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label24.Location = new System.Drawing.Point(808, 351);
+            this.label24.Location = new System.Drawing.Point(846, 351);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(61, 28);
             this.label24.TabIndex = 48;
@@ -631,7 +618,7 @@
             // FatherNameTxt
             // 
             this.FatherNameTxt.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.FatherNameTxt.Location = new System.Drawing.Point(220, 351);
+            this.FatherNameTxt.Location = new System.Drawing.Point(219, 351);
             this.FatherNameTxt.Name = "FatherNameTxt";
             this.FatherNameTxt.Size = new System.Drawing.Size(189, 27);
             this.FatherNameTxt.TabIndex = 45;
@@ -641,7 +628,7 @@
             this.label26.AutoSize = true;
             this.label26.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label26.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label26.Location = new System.Drawing.Point(98, 350);
+            this.label26.Location = new System.Drawing.Point(143, 351);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(47, 28);
             this.label26.TabIndex = 44;
@@ -672,7 +659,7 @@
             this.FatherAdressTxt.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.FatherAdressTxt.Location = new System.Drawing.Point(929, 388);
             this.FatherAdressTxt.Name = "FatherAdressTxt";
-            this.FatherAdressTxt.Size = new System.Drawing.Size(498, 27);
+            this.FatherAdressTxt.Size = new System.Drawing.Size(189, 27);
             this.FatherAdressTxt.TabIndex = 59;
             // 
             // label28
@@ -680,7 +667,7 @@
             this.label28.AutoSize = true;
             this.label28.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label28.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label28.Location = new System.Drawing.Point(807, 387);
+            this.label28.Location = new System.Drawing.Point(845, 385);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(62, 28);
             this.label28.TabIndex = 60;
@@ -701,7 +688,7 @@
             // 
             this.LivesTogetherCheckBox.AutoSize = true;
             this.LivesTogetherCheckBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.LivesTogetherCheckBox.Location = new System.Drawing.Point(98, 438);
+            this.LivesTogetherCheckBox.Location = new System.Drawing.Point(98, 437);
             this.LivesTogetherCheckBox.Name = "LivesTogetherCheckBox";
             this.LivesTogetherCheckBox.Size = new System.Drawing.Size(133, 24);
             this.LivesTogetherCheckBox.TabIndex = 62;
@@ -712,7 +699,7 @@
             // 
             this.LivesSeperateCheckBox.AutoSize = true;
             this.LivesSeperateCheckBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.LivesSeperateCheckBox.Location = new System.Drawing.Point(258, 438);
+            this.LivesSeperateCheckBox.Location = new System.Drawing.Point(258, 437);
             this.LivesSeperateCheckBox.Name = "LivesSeperateCheckBox";
             this.LivesSeperateCheckBox.Size = new System.Drawing.Size(107, 24);
             this.LivesSeperateCheckBox.TabIndex = 63;
@@ -723,7 +710,7 @@
             // 
             this.MotherDeadCheckBox.AutoSize = true;
             this.MotherDeadCheckBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.MotherDeadCheckBox.Location = new System.Drawing.Point(571, 438);
+            this.MotherDeadCheckBox.Location = new System.Drawing.Point(571, 437);
             this.MotherDeadCheckBox.Name = "MotherDeadCheckBox";
             this.MotherDeadCheckBox.Size = new System.Drawing.Size(92, 24);
             this.MotherDeadCheckBox.TabIndex = 64;
@@ -734,7 +721,7 @@
             // 
             this.FatherDeadCheckBox.AutoSize = true;
             this.FatherDeadCheckBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.FatherDeadCheckBox.Location = new System.Drawing.Point(700, 438);
+            this.FatherDeadCheckBox.Location = new System.Drawing.Point(699, 437);
             this.FatherDeadCheckBox.Name = "FatherDeadCheckBox";
             this.FatherDeadCheckBox.Size = new System.Drawing.Size(92, 24);
             this.FatherDeadCheckBox.TabIndex = 65;
@@ -746,7 +733,7 @@
             this.label30.AutoSize = true;
             this.label30.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label30.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label30.Location = new System.Drawing.Point(98, 505);
+            this.label30.Location = new System.Drawing.Point(143, 501);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(52, 28);
             this.label30.TabIndex = 66;
@@ -755,7 +742,7 @@
             // Emergency1NameTxtBox
             // 
             this.Emergency1NameTxtBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.Emergency1NameTxtBox.Location = new System.Drawing.Point(220, 505);
+            this.Emergency1NameTxtBox.Location = new System.Drawing.Point(219, 505);
             this.Emergency1NameTxtBox.Name = "Emergency1NameTxtBox";
             this.Emergency1NameTxtBox.Size = new System.Drawing.Size(189, 27);
             this.Emergency1NameTxtBox.TabIndex = 67;
@@ -784,7 +771,7 @@
             this.label32.AutoSize = true;
             this.label32.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label32.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label32.Location = new System.Drawing.Point(820, 506);
+            this.label32.Location = new System.Drawing.Point(821, 507);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(67, 28);
             this.label32.TabIndex = 70;
@@ -813,7 +800,7 @@
             // Emergency1RelativityTxtBox
             // 
             this.Emergency1RelativityTxtBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.Emergency1RelativityTxtBox.Location = new System.Drawing.Point(1238, 506);
+            this.Emergency1RelativityTxtBox.Location = new System.Drawing.Point(1238, 507);
             this.Emergency1RelativityTxtBox.Name = "Emergency1RelativityTxtBox";
             this.Emergency1RelativityTxtBox.Size = new System.Drawing.Size(189, 27);
             this.Emergency1RelativityTxtBox.TabIndex = 73;
@@ -840,7 +827,7 @@
             // Emergency2TelNoTxtBox
             // 
             this.Emergency2TelNoTxtBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.Emergency2TelNoTxtBox.Location = new System.Drawing.Point(929, 538);
+            this.Emergency2TelNoTxtBox.Location = new System.Drawing.Point(929, 539);
             this.Emergency2TelNoTxtBox.Name = "Emergency2TelNoTxtBox";
             this.Emergency2TelNoTxtBox.Size = new System.Drawing.Size(189, 27);
             this.Emergency2TelNoTxtBox.TabIndex = 79;
@@ -851,7 +838,7 @@
             this.label35.AutoSize = true;
             this.label35.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label35.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label35.Location = new System.Drawing.Point(820, 539);
+            this.label35.Location = new System.Drawing.Point(821, 539);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(67, 28);
             this.label35.TabIndex = 78;
@@ -860,7 +847,7 @@
             // Emergency2SurnameTxtBox
             // 
             this.Emergency2SurnameTxtBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.Emergency2SurnameTxtBox.Location = new System.Drawing.Point(571, 542);
+            this.Emergency2SurnameTxtBox.Location = new System.Drawing.Point(571, 541);
             this.Emergency2SurnameTxtBox.Name = "Emergency2SurnameTxtBox";
             this.Emergency2SurnameTxtBox.Size = new System.Drawing.Size(189, 27);
             this.Emergency2SurnameTxtBox.TabIndex = 77;
@@ -870,7 +857,7 @@
             this.label36.AutoSize = true;
             this.label36.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label36.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label36.Location = new System.Drawing.Point(466, 538);
+            this.label36.Location = new System.Drawing.Point(466, 539);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(80, 28);
             this.label36.TabIndex = 76;
@@ -879,7 +866,7 @@
             // Emergency2NameTxtBox
             // 
             this.Emergency2NameTxtBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.Emergency2NameTxtBox.Location = new System.Drawing.Point(220, 538);
+            this.Emergency2NameTxtBox.Location = new System.Drawing.Point(219, 539);
             this.Emergency2NameTxtBox.Name = "Emergency2NameTxtBox";
             this.Emergency2NameTxtBox.Size = new System.Drawing.Size(189, 27);
             this.Emergency2NameTxtBox.TabIndex = 75;
@@ -889,7 +876,7 @@
             this.label37.AutoSize = true;
             this.label37.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label37.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label37.Location = new System.Drawing.Point(98, 538);
+            this.label37.Location = new System.Drawing.Point(143, 535);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(52, 28);
             this.label37.TabIndex = 74;
@@ -908,7 +895,7 @@
             this.label38.AutoSize = true;
             this.label38.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label38.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label38.Location = new System.Drawing.Point(1144, 570);
+            this.label38.Location = new System.Drawing.Point(1144, 571);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(77, 28);
             this.label38.TabIndex = 88;
@@ -928,7 +915,7 @@
             this.label39.AutoSize = true;
             this.label39.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label39.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label39.Location = new System.Drawing.Point(820, 572);
+            this.label39.Location = new System.Drawing.Point(821, 572);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(67, 28);
             this.label39.TabIndex = 86;
@@ -956,7 +943,7 @@
             // Emergency3NameTxtBox
             // 
             this.Emergency3NameTxtBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.Emergency3NameTxtBox.Location = new System.Drawing.Point(220, 571);
+            this.Emergency3NameTxtBox.Location = new System.Drawing.Point(219, 571);
             this.Emergency3NameTxtBox.Name = "Emergency3NameTxtBox";
             this.Emergency3NameTxtBox.Size = new System.Drawing.Size(189, 27);
             this.Emergency3NameTxtBox.TabIndex = 83;
@@ -966,7 +953,7 @@
             this.label41.AutoSize = true;
             this.label41.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label41.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label41.Location = new System.Drawing.Point(98, 571);
+            this.label41.Location = new System.Drawing.Point(143, 567);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(52, 28);
             this.label41.TabIndex = 82;
@@ -988,7 +975,7 @@
             this.label43.AutoSize = true;
             this.label43.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label43.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label43.Location = new System.Drawing.Point(74, 684);
+            this.label43.Location = new System.Drawing.Point(64, 684);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(126, 28);
             this.label43.TabIndex = 91;
@@ -997,10 +984,11 @@
             // TotalTxt
             // 
             this.TotalTxt.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.TotalTxt.Location = new System.Drawing.Point(220, 684);
+            this.TotalTxt.Location = new System.Drawing.Point(219, 684);
             this.TotalTxt.Name = "TotalTxt";
             this.TotalTxt.Size = new System.Drawing.Size(345, 27);
             this.TotalTxt.TabIndex = 92;
+            this.TotalTxt.TextChanged += new System.EventHandler(this.TotalTxt_TextChanged);
             this.TotalTxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TotalTxt_KeyPress);
             // 
             // label44
@@ -1015,66 +1003,490 @@
             this.label44.TabIndex = 93;
             this.label44.Text = "Taksit";
             // 
-            // InstallmentCmBox
-            // 
-            this.InstallmentCmBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.InstallmentCmBox.FormattingEnabled = true;
-            this.InstallmentCmBox.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "12"});
-            this.InstallmentCmBox.Location = new System.Drawing.Point(1124, 683);
-            this.InstallmentCmBox.Name = "InstallmentCmBox";
-            this.InstallmentCmBox.Size = new System.Drawing.Size(303, 28);
-            this.InstallmentCmBox.TabIndex = 94;
-            // 
             // label45
             // 
             this.label45.AutoSize = true;
             this.label45.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label45.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label45.Location = new System.Drawing.Point(371, 754);
+            this.label45.Location = new System.Drawing.Point(286, 715);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(194, 28);
             this.label45.TabIndex = 95;
             this.label45.Text = "Taksit Ödeme Haftası";
             // 
-            // PaymentWeekTxt
-            // 
-            this.PaymentWeekTxt.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.PaymentWeekTxt.Location = new System.Drawing.Point(631, 755);
-            this.PaymentWeekTxt.Name = "PaymentWeekTxt";
-            this.PaymentWeekTxt.Size = new System.Drawing.Size(345, 27);
-            this.PaymentWeekTxt.TabIndex = 96;
-            // 
             // AddStudentButton
             // 
-            this.AddStudentButton.Location = new System.Drawing.Point(631, 870);
+            this.AddStudentButton.Location = new System.Drawing.Point(1053, 759);
             this.AddStudentButton.Name = "AddStudentButton";
-            this.AddStudentButton.Size = new System.Drawing.Size(345, 93);
+            this.AddStudentButton.Size = new System.Drawing.Size(270, 47);
             this.AddStudentButton.TabIndex = 97;
             this.AddStudentButton.Text = "Kayıt Ekle";
             this.AddStudentButton.UseVisualStyleBackColor = true;
             this.AddStudentButton.Click += new System.EventHandler(this.AddStudentButton_Click);
+            // 
+            // printButton
+            // 
+            this.printButton.Location = new System.Drawing.Point(523, 760);
+            this.printButton.Name = "printButton";
+            this.printButton.Size = new System.Drawing.Size(227, 47);
+            this.printButton.TabIndex = 98;
+            this.printButton.Text = "Yazdır";
+            this.printButton.UseVisualStyleBackColor = true;
+            this.printButton.Click += new System.EventHandler(this.printButton_Click);
+            // 
+            // FoodCheckBx
+            // 
+            this.FoodCheckBx.AutoSize = true;
+            this.FoodCheckBx.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.FoodCheckBx.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FoodCheckBx.Location = new System.Drawing.Point(699, 151);
+            this.FoodCheckBx.Name = "FoodCheckBx";
+            this.FoodCheckBx.Size = new System.Drawing.Size(90, 32);
+            this.FoodCheckBx.TabIndex = 99;
+            this.FoodCheckBx.Text = "Yemek";
+            this.FoodCheckBx.UseVisualStyleBackColor = false;
+            this.FoodCheckBx.CheckedChanged += new System.EventHandler(this.FoodCheckBx_CheckedChanged);
+            // 
+            // CashCheckBox
+            // 
+            this.CashCheckBox.AutoSize = true;
+            this.CashCheckBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.CashCheckBox.Location = new System.Drawing.Point(875, 717);
+            this.CashCheckBox.Name = "CashCheckBox";
+            this.CashCheckBox.Size = new System.Drawing.Size(66, 24);
+            this.CashCheckBox.TabIndex = 100;
+            this.CashCheckBox.Text = "Nakit";
+            this.CashCheckBox.UseVisualStyleBackColor = false;
+            // 
+            // CreditCardCheckBox
+            // 
+            this.CreditCardCheckBox.AutoSize = true;
+            this.CreditCardCheckBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.CreditCardCheckBox.Location = new System.Drawing.Point(1098, 717);
+            this.CreditCardCheckBox.Name = "CreditCardCheckBox";
+            this.CreditCardCheckBox.Size = new System.Drawing.Size(101, 24);
+            this.CreditCardCheckBox.TabIndex = 101;
+            this.CreditCardCheckBox.Text = "Kredi Kartı";
+            this.CreditCardCheckBox.UseVisualStyleBackColor = false;
+            // 
+            // TransferCheckBox
+            // 
+            this.TransferCheckBox.AutoSize = true;
+            this.TransferCheckBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.TransferCheckBox.Location = new System.Drawing.Point(1322, 717);
+            this.TransferCheckBox.Name = "TransferCheckBox";
+            this.TransferCheckBox.Size = new System.Drawing.Size(131, 24);
+            this.TransferCheckBox.TabIndex = 102;
+            this.TransferCheckBox.Text = "Hesaba Havale";
+            this.TransferCheckBox.UseVisualStyleBackColor = false;
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label46.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label46.Location = new System.Drawing.Point(1117, 388);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(101, 25);
+            this.label46.TabIndex = 103;
+            this.label46.Text = "Çalıştığı Yer";
+            // 
+            // fatherworkingplacetxt
+            // 
+            this.fatherworkingplacetxt.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.fatherworkingplacetxt.Location = new System.Drawing.Point(1238, 391);
+            this.fatherworkingplacetxt.Name = "fatherworkingplacetxt";
+            this.fatherworkingplacetxt.Size = new System.Drawing.Size(189, 27);
+            this.fatherworkingplacetxt.TabIndex = 104;
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label47.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label47.Location = new System.Drawing.Point(1117, 279);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(101, 25);
+            this.label47.TabIndex = 105;
+            this.label47.Text = "Çalıştığı Yer";
+            this.label47.Click += new System.EventHandler(this.label47_Click);
+            // 
+            // motherworkingplacetxt
+            // 
+            this.motherworkingplacetxt.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.motherworkingplacetxt.Location = new System.Drawing.Point(1238, 276);
+            this.motherworkingplacetxt.Name = "motherworkingplacetxt";
+            this.motherworkingplacetxt.Size = new System.Drawing.Size(189, 27);
+            this.motherworkingplacetxt.TabIndex = 106;
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label48.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label48.Location = new System.Drawing.Point(85, 779);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(46, 28);
+            this.label48.TabIndex = 107;
+            this.label48.Text = "Not";
+            // 
+            // notetxt
+            // 
+            this.notetxt.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.notetxt.Location = new System.Drawing.Point(176, 779);
+            this.notetxt.Name = "notetxt";
+            this.notetxt.Size = new System.Drawing.Size(322, 27);
+            this.notetxt.TabIndex = 108;
+            // 
+            // MotherIsCustodianCheckBox
+            // 
+            this.MotherIsCustodianCheckBox.AutoSize = true;
+            this.MotherIsCustodianCheckBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.MotherIsCustodianCheckBox.Location = new System.Drawing.Point(219, 283);
+            this.MotherIsCustodianCheckBox.Name = "MotherIsCustodianCheckBox";
+            this.MotherIsCustodianCheckBox.Size = new System.Drawing.Size(93, 24);
+            this.MotherIsCustodianCheckBox.TabIndex = 109;
+            this.MotherIsCustodianCheckBox.Text = "Velisi Mi?";
+            this.MotherIsCustodianCheckBox.UseVisualStyleBackColor = false;
+            // 
+            // FatherIsCustodianCheckBox
+            // 
+            this.FatherIsCustodianCheckBox.AutoSize = true;
+            this.FatherIsCustodianCheckBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.FatherIsCustodianCheckBox.Location = new System.Drawing.Point(219, 391);
+            this.FatherIsCustodianCheckBox.Name = "FatherIsCustodianCheckBox";
+            this.FatherIsCustodianCheckBox.Size = new System.Drawing.Size(93, 24);
+            this.FatherIsCustodianCheckBox.TabIndex = 110;
+            this.FatherIsCustodianCheckBox.Text = "Velisi Mi?";
+            this.FatherIsCustodianCheckBox.UseVisualStyleBackColor = false;
+            // 
+            // InstallmentTxt
+            // 
+            this.InstallmentTxt.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.InstallmentTxt.Location = new System.Drawing.Point(1066, 679);
+            this.InstallmentTxt.Name = "InstallmentTxt";
+            this.InstallmentTxt.Size = new System.Drawing.Size(345, 27);
+            this.InstallmentTxt.TabIndex = 111;
+            this.InstallmentTxt.TextChanged += new System.EventHandler(this.InstallmentTxt_TextChanged);
+            this.InstallmentTxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.InstallmentTxt_KeyPress);
+            // 
+            // installmentPaymentWeekCmbox
+            // 
+            this.installmentPaymentWeekCmbox.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.installmentPaymentWeekCmbox.FormattingEnabled = true;
+            this.installmentPaymentWeekCmbox.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.installmentPaymentWeekCmbox.Items.AddRange(new object[] {
+            "1-5",
+            "6-10",
+            "11-15",
+            "16-20",
+            "21-25",
+            "26-30"});
+            this.installmentPaymentWeekCmbox.Location = new System.Drawing.Point(504, 715);
+            this.installmentPaymentWeekCmbox.Name = "installmentPaymentWeekCmbox";
+            this.installmentPaymentWeekCmbox.Size = new System.Drawing.Size(345, 28);
+            this.installmentPaymentWeekCmbox.TabIndex = 112;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label18.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label18.Location = new System.Drawing.Point(193, 55);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(20, 28);
+            this.label18.TabIndex = 113;
+            this.label18.Text = "*";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label21.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label21.Location = new System.Drawing.Point(193, 93);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(20, 28);
+            this.label21.TabIndex = 114;
+            this.label21.Text = "*";
+            this.label21.Click += new System.EventHandler(this.label21_Click);
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label49.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label49.Location = new System.Drawing.Point(544, 49);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(20, 28);
+            this.label49.TabIndex = 115;
+            this.label49.Text = "*";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label52.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label52.Location = new System.Drawing.Point(1212, 52);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(20, 28);
+            this.label52.TabIndex = 118;
+            this.label52.Text = "*";
+            this.label52.Click += new System.EventHandler(this.label52_Click);
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label53.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label53.Location = new System.Drawing.Point(1212, 93);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(20, 28);
+            this.label53.TabIndex = 119;
+            this.label53.Text = "*";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label54.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label54.Location = new System.Drawing.Point(193, 245);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(20, 28);
+            this.label54.TabIndex = 120;
+            this.label54.Text = "*";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label55.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label55.Location = new System.Drawing.Point(193, 354);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(20, 28);
+            this.label55.TabIndex = 121;
+            this.label55.Text = "*";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label56.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label56.Location = new System.Drawing.Point(544, 245);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(20, 28);
+            this.label56.TabIndex = 122;
+            this.label56.Text = "*";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label57.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label57.Location = new System.Drawing.Point(544, 279);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(20, 28);
+            this.label57.TabIndex = 123;
+            this.label57.Text = "*";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label58.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label58.Location = new System.Drawing.Point(544, 354);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(20, 28);
+            this.label58.TabIndex = 124;
+            this.label58.Text = "*";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label59.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label59.Location = new System.Drawing.Point(544, 390);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(20, 28);
+            this.label59.TabIndex = 125;
+            this.label59.Text = "*";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label60.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label60.Location = new System.Drawing.Point(903, 55);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(20, 28);
+            this.label60.TabIndex = 126;
+            this.label60.Text = "*";
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label61.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label61.Location = new System.Drawing.Point(903, 83);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(20, 28);
+            this.label61.TabIndex = 127;
+            this.label61.Text = "*";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label50.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label50.Location = new System.Drawing.Point(193, 684);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(20, 28);
+            this.label50.TabIndex = 128;
+            this.label50.Text = "*";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label51.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label51.Location = new System.Drawing.Point(478, 715);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(20, 28);
+            this.label51.TabIndex = 129;
+            this.label51.Text = "*";
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label62.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label62.Location = new System.Drawing.Point(1040, 680);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(20, 28);
+            this.label62.TabIndex = 130;
+            this.label62.Text = "*";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label63.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label63.Location = new System.Drawing.Point(1212, 245);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(20, 28);
+            this.label63.TabIndex = 131;
+            this.label63.Text = "*";
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label64.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label64.Location = new System.Drawing.Point(1212, 279);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(20, 28);
+            this.label64.TabIndex = 132;
+            this.label64.Text = "*";
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label65.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label65.Location = new System.Drawing.Point(1212, 355);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(20, 28);
+            this.label65.TabIndex = 133;
+            this.label65.Text = "*";
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label66.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label66.Location = new System.Drawing.Point(1212, 387);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(20, 28);
+            this.label66.TabIndex = 134;
+            this.label66.Text = "*";
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label67.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label67.Location = new System.Drawing.Point(903, 279);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(20, 28);
+            this.label67.TabIndex = 135;
+            this.label67.Text = "*";
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label68.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label68.Location = new System.Drawing.Point(903, 391);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(20, 28);
+            this.label68.TabIndex = 136;
+            this.label68.Text = "*";
+            // 
+            // KresPrint
+            // 
+            this.KresPrint.Location = new System.Drawing.Point(786, 760);
+            this.KresPrint.Name = "KresPrint";
+            this.KresPrint.Size = new System.Drawing.Size(227, 47);
+            this.KresPrint.TabIndex = 137;
+            this.KresPrint.Text = "Yazdır(Kreş)";
+            this.KresPrint.UseVisualStyleBackColor = true;
+            this.KresPrint.Click += new System.EventHandler(this.KresPrint_Click);
             // 
             // AddStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::KuzeyYildizi.Properties.Resources.Solid_white;
-            this.ClientSize = new System.Drawing.Size(1545, 1109);
+            this.ClientSize = new System.Drawing.Size(1482, 845);
+            this.Controls.Add(this.KresPrint);
+            this.Controls.Add(this.label68);
+            this.Controls.Add(this.label67);
+            this.Controls.Add(this.label66);
+            this.Controls.Add(this.label65);
+            this.Controls.Add(this.label64);
+            this.Controls.Add(this.label63);
+            this.Controls.Add(this.label62);
+            this.Controls.Add(this.label51);
+            this.Controls.Add(this.label50);
+            this.Controls.Add(this.label61);
+            this.Controls.Add(this.label60);
+            this.Controls.Add(this.label59);
+            this.Controls.Add(this.label58);
+            this.Controls.Add(this.label57);
+            this.Controls.Add(this.label56);
+            this.Controls.Add(this.label55);
+            this.Controls.Add(this.label54);
+            this.Controls.Add(this.label53);
+            this.Controls.Add(this.label52);
+            this.Controls.Add(this.label49);
+            this.Controls.Add(this.label21);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.installmentPaymentWeekCmbox);
+            this.Controls.Add(this.InstallmentTxt);
+            this.Controls.Add(this.FatherIsCustodianCheckBox);
+            this.Controls.Add(this.MotherIsCustodianCheckBox);
+            this.Controls.Add(this.notetxt);
+            this.Controls.Add(this.label48);
+            this.Controls.Add(this.motherworkingplacetxt);
+            this.Controls.Add(this.label47);
+            this.Controls.Add(this.fatherworkingplacetxt);
+            this.Controls.Add(this.label46);
+            this.Controls.Add(this.TransferCheckBox);
+            this.Controls.Add(this.CreditCardCheckBox);
+            this.Controls.Add(this.CashCheckBox);
+            this.Controls.Add(this.FoodCheckBx);
+            this.Controls.Add(this.printButton);
             this.Controls.Add(this.AddStudentButton);
-            this.Controls.Add(this.PaymentWeekTxt);
             this.Controls.Add(this.label45);
-            this.Controls.Add(this.InstallmentCmBox);
             this.Controls.Add(this.label44);
             this.Controls.Add(this.TotalTxt);
             this.Controls.Add(this.label43);
@@ -1114,8 +1526,6 @@
             this.Controls.Add(this.label27);
             this.Controls.Add(this.FatherTelNoTxt);
             this.Controls.Add(this.label20);
-            this.Controls.Add(this.FatherCmBox);
-            this.Controls.Add(this.label21);
             this.Controls.Add(this.FatherOccupationTxt);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label23);
@@ -1127,8 +1537,6 @@
             this.Controls.Add(this.label26);
             this.Controls.Add(this.MotherAdresTxt);
             this.Controls.Add(this.label19);
-            this.Controls.Add(this.MotherCmBox);
-            this.Controls.Add(this.label18);
             this.Controls.Add(this.OccupationTxt);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label17);
@@ -1196,10 +1604,8 @@
         private Label label16;
         private Label label17;
         private Label label2;
-        private Label label18;
         private Label label19;
         private Label label20;
-        private Label label21;
         private Label label22;
         private Label label23;
         private Label label24;
@@ -1240,10 +1646,8 @@
         public TextBox MotherSurnameTxt;
         public TextBox MotherNameTxt;
         public TextBox OccupationTxt;
-        public ComboBox MotherCmBox;
         public TextBox MotherAdresTxt;
         public TextBox FatherTelNoTxt;
-        public ComboBox FatherCmBox;
         public TextBox FatherOccupationTxt;
         public TextBox FatherTcTxt;
         public TextBox FatherSurnameTxt;
@@ -1267,8 +1671,44 @@
         public TextBox Emergency3SurnameTxtBox;
         public TextBox Emergency3NameTxtBox;
         public TextBox TotalTxt;
-        public ComboBox InstallmentCmBox;
-        public TextBox PaymentWeekTxt;
         public TextBox nameTxt;
+        private Button printButton;
+        private CheckBox FoodCheckBx;
+        public CheckBox CashCheckBox;
+        public CheckBox CreditCardCheckBox;
+        public CheckBox TransferCheckBox;
+        private Label label46;
+        public TextBox fatherworkingplacetxt;
+        private Label label47;
+        public TextBox motherworkingplacetxt;
+        private Label label48;
+        public TextBox notetxt;
+        public CheckBox MotherIsCustodianCheckBox;
+        public CheckBox FatherIsCustodianCheckBox;
+        public TextBox InstallmentTxt;
+        public ComboBox installmentPaymentWeekCmbox;
+        private Label label18;
+        private Label label21;
+        private Label label49;
+        private Label label52;
+        private Label label53;
+        private Label label54;
+        private Label label55;
+        private Label label56;
+        private Label label57;
+        private Label label58;
+        private Label label59;
+        private Label label60;
+        private Label label61;
+        private Label label50;
+        private Label label51;
+        private Label label62;
+        private Label label63;
+        private Label label64;
+        private Label label65;
+        private Label label66;
+        private Label label67;
+        private Label label68;
+        private Button KresPrint;
     }
 }

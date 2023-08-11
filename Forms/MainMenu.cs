@@ -1,4 +1,6 @@
-﻿using KuzeyYildizi.Forms;
+﻿using KuzeyYildizi.Classes;
+using KuzeyYildizi.Forms;
+using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,10 +15,12 @@ namespace KuzeyYildizi
 {
     public partial class MainMenu : Form
     {
-        public MainMenu()
+        private string username;
+        public MainMenu(string username)
         {
             InitializeComponent();
             pictureBox1.Image = Properties.Resources.KY_LOGO;
+            this.username = username;
 
         }
 
@@ -41,6 +45,7 @@ namespace KuzeyYildizi
 
         private void ReportsAndOutputs_Click(object sender, EventArgs e)
         {
+           
             ReportsAndOutputs reportsAndOutputsForm = new ReportsAndOutputs();
             reportsAndOutputsForm.Show();
         }
@@ -53,7 +58,44 @@ namespace KuzeyYildizi
 
         private void MainMenu_Load(object sender, EventArgs e)
         {
+            if (username == "misafir")
+            {
+                Accounting.Enabled = false;
+                ReportsAndOutputs.Enabled = false;
+                StudentUpdateDelete.Enabled = false;
+                backUpBtn.Enabled = false;
+            }
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            StudentUpdateDelete frm = new StudentUpdateDelete();
+            frm.Show();
+        }
 
+        private void backUpBtn_Click(object sender, EventArgs e)
+        {
+            using (FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog())
+            {
+                folderBrowserDialog.Description = "Yedekleme Yerini Seçiniz.";
+                if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
+                {
+                    string backupPath = folderBrowserDialog.SelectedPath;
+
+                    try
+                    {
+                        using (MyDbContext dbContext = new MyDbContext())
+                        {
+                            dbContext.BackupDatabase(backupPath);
+                        }
+
+                        MessageBox.Show("Veritabanı başarı ile yedeklendi.");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Yedekleme sırasında hata oluştu: " + ex.Message);
+                    }
+                }
+            }
         }
     }
 }

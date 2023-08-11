@@ -1,4 +1,5 @@
 using KuzeyYildizi.Classes;
+using System.Net;
 
 namespace KuzeyYildizi
 {
@@ -12,7 +13,8 @@ namespace KuzeyYildizi
         {
             get { return isCredentialsValid; }
         }
-        
+        public string username { get; private set; }
+
         public Login()
         {
             InitializeComponent();
@@ -38,7 +40,7 @@ namespace KuzeyYildizi
 
         private void loginSubmit_Click(object sender, EventArgs e)
         {
-            string username = usernameTxtBox.Text;
+            username = usernameTxtBox.Text;
             string password = passwordTxtBox.Text;
 
             if (string.IsNullOrEmpty(username))
@@ -53,8 +55,10 @@ namespace KuzeyYildizi
                 return;
             }
 
+            
             // Find the user with the matching username and password
             User user = users.FirstOrDefault(u => u.Username == username && u.Password == password);
+
 
             if (user != null)
             {
@@ -89,6 +93,10 @@ namespace KuzeyYildizi
         private void Login_Load(object sender, EventArgs e)
         {
 
+        }
+        public string GetUsername()
+        {
+            return username;
         }
     }
 }

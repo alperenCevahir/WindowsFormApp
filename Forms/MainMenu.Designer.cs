@@ -28,11 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.GetFastPayment = new System.Windows.Forms.Button();
             this.ReportsAndOutputs = new System.Windows.Forms.Button();
             this.NewEntry = new System.Windows.Forms.Button();
             this.Accounting = new System.Windows.Forms.Button();
+            this.StudentUpdateDelete = new System.Windows.Forms.Button();
+            this.backUpBtn = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,18 +91,53 @@
             this.Accounting.UseVisualStyleBackColor = true;
             this.Accounting.Click += new System.EventHandler(this.Accounting_Click_1);
             // 
+            // StudentUpdateDelete
+            // 
+            this.StudentUpdateDelete.Location = new System.Drawing.Point(571, 385);
+            this.StudentUpdateDelete.Name = "StudentUpdateDelete";
+            this.StudentUpdateDelete.Size = new System.Drawing.Size(217, 53);
+            this.StudentUpdateDelete.TabIndex = 5;
+            this.StudentUpdateDelete.Text = "Öğrenci Düzenleme, Silme";
+            this.StudentUpdateDelete.UseVisualStyleBackColor = true;
+            this.StudentUpdateDelete.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // backUpBtn
+            // 
+            this.backUpBtn.Location = new System.Drawing.Point(12, 385);
+            this.backUpBtn.Name = "backUpBtn";
+            this.backUpBtn.Size = new System.Drawing.Size(217, 53);
+            this.backUpBtn.TabIndex = 6;
+            this.backUpBtn.Text = "Yedekle";
+            this.backUpBtn.UseVisualStyleBackColor = true;
+            this.backUpBtn.Click += new System.EventHandler(this.backUpBtn_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(12, 332);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(194, 50);
+            this.label5.TabIndex = 27;
+            this.label5.Text = "Haftada 1 yedekleme \r\nyapmanız tavsiye edilir.\r\n";
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::KuzeyYildizi.Properties.Resources.Solid_white;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.backUpBtn);
+            this.Controls.Add(this.StudentUpdateDelete);
             this.Controls.Add(this.Accounting);
             this.Controls.Add(this.NewEntry);
             this.Controls.Add(this.ReportsAndOutputs);
             this.Controls.Add(this.GetFastPayment);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "MainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -106,6 +145,7 @@
             this.Load += new System.EventHandler(this.MainMenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -116,5 +156,8 @@
         private Button ReportsAndOutputs;
         private Button NewEntry;
         private Button Accounting;
+        private Button StudentUpdateDelete;
+        private Button backUpBtn;
+        private Label label5;
     }
 }

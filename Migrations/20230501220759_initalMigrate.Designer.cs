@@ -4,6 +4,7 @@ using KuzeyYildizi.Classes;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KuzeyYildizi.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    partial class MyDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230501220759_initalMigrate")]
+    partial class initalMigrate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,80 +24,6 @@ namespace KuzeyYildizi.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
-
-            modelBuilder.Entity("KuzeyYildizi.Classes.Expense", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<double>("Amount")
-                        .HasColumnType("float");
-
-                    b.Property<DateTime>("Date")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Information")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Type")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("expenses");
-                });
-
-            modelBuilder.Entity("KuzeyYildizi.Classes.Income", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<double>("Amount")
-                        .HasColumnType("float");
-
-                    b.Property<DateTime>("Date")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Information")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Type")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("incomes");
-                });
-
-            modelBuilder.Entity("KuzeyYildizi.Classes.Payments", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<double>("Amount")
-                        .HasColumnType("float");
-
-                    b.Property<DateTime>("Date")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("StudentId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("StudentId");
-
-                    b.ToTable("payments");
-                });
 
             modelBuilder.Entity("KuzeyYildizi.Classes.Student", b =>
                 {
@@ -109,42 +38,46 @@ namespace KuzeyYildizi.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("BloodType")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("Cash")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("CreditCard")
-                        .HasColumnType("bit");
 
                     b.Property<string>("Diseases")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Emergency1NameSurname")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Emergency1Relativity")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Emergency1TelNo")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Emergency2NameSurname")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Emergency2Relativity")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Emergency2TelNo")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Emergency3NameSurname")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Emergency3Relativity")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Emergency3TelNo")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FatherAddress")
@@ -160,17 +93,16 @@ namespace KuzeyYildizi.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FatherOccupation")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FatherTc")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FatherTelNo")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("IncludeFood")
-                        .HasColumnType("bit");
 
                     b.Property<int>("Installment")
                         .HasColumnType("int");
@@ -197,9 +129,11 @@ namespace KuzeyYildizi.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("MotherOccupation")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("MotherTc")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("MotherTelNo")
@@ -209,9 +143,6 @@ namespace KuzeyYildizi.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("PaidInstallment")
-                        .HasColumnType("int");
 
                     b.Property<bool>("ParentsLiveTogether")
                         .HasColumnType("bit");
@@ -248,23 +179,9 @@ namespace KuzeyYildizi.Migrations
                     b.Property<int>("Total")
                         .HasColumnType("int");
 
-                    b.Property<bool>("Transfer")
-                        .HasColumnType("bit");
-
                     b.HasKey("Id");
 
                     b.ToTable("students");
-                });
-
-            modelBuilder.Entity("KuzeyYildizi.Classes.Payments", b =>
-                {
-                    b.HasOne("KuzeyYildizi.Classes.Student", "Student")
-                        .WithMany()
-                        .HasForeignKey("StudentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Student");
                 });
 #pragma warning restore 612, 618
         }

@@ -10,93 +10,102 @@ namespace KuzeyYildizi.Classes
 {
     public class Student
     {
-        private int _tcNo;
-
         [Key]
-        public int TcNo
-        {
-            get { return _tcNo; }
-            set
-            {
-                if (value.ToString().Length == 11)
-                {
-                    _tcNo = value;
-                }
-                else
-                {
-                    throw new ArgumentException("TcNo must be 11 digits.");
-                }
-            }
-        }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
+        //Student Info
+        public string TcNo { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
-        public bool IsFatherAlive { get; set; }
-        public bool IsMotherAlive { get; set; }     
-        private int? _telNo;
-        public int? TelNo
-        {
-            get { return _telNo; }
-            set
-            {
-                if (value.ToString().Length != 10)
-                {
-                    throw new ArgumentException("The TelNo must be 10 digits long.");
-                }
-                _telNo = value;
-            }
-        }
+        public string? TelNo { get; set; }
         public int StudentGrade { get; set; }
-        public string StudentClass { get; set; }
         public string BirthPlaceAndYear { get; set; }
-        public bool StudentGender { get; set; }
+        public string StudentGender { get; set; }
         public DateTime StartDate { get; set; }
-        public string BloodType { get; set; }
+        public string? BloodType { get; set; }
         public string? Diseases { get; set; }
         public string? Medicines { get; set; }
         public string School { get; set; }
-        public string Emergency1NameSurname {get; set; }
-        public int Emergency1TelNo { get; set; }
-        public string Emergency1Relativity { get; set; }
-        public string Emergency2NameSurname { get; set; }
-        public int Emergency2TelNo { get; set; }
-        public string Emergency2Relativity { get; set; }
+        public bool IncludeFood { get; set; }
 
-        public string Emergency3NameSurname { get; set; }
-        public int Emergency3TelNo { get; set; }
-        public string Emergency3Relativity { get; set; }
-
-
-
-
-        public Student(string Name, string Surname, int TcNo, bool IsFatherAlive, bool IsMotherAlive, int TelNo
-            ,int StudentGrade, string BirthPlaceAndYear, DateTime StartDate, string BloodType, string Diseases,
-            string Medicines, string School, string Emergency1NameSurname, string Emergency2NameSurname,
-            string Emergency3NameSurname, int Emergency1TelNo, int Emergency2TelNo, int Emergency3TelNo
-            , string Emergency1Relativity, string Emergency2Relativity, string Emergency3Relativity)
+        //Parents Infos
+        public bool IsFatherAlive { get; set; }
+        public bool IsMotherAlive { get; set; }  
+        public string? MotherTc { get; set; }
+        public string? FatherTc { get; set; }
+        public string MotherIsCustodian { get; set; }
+        public string FatherIsCustodian { get; set; }
+        public bool ParentsLiveTogether { get; set; }
+        public string MotherNameSurname { get; set; }
+        public string FatherNameSurname { get; set; }
+        public string MotherTelNo { get; set; }
+        public string FatherTelNo { get; set; }
+        public string? MotherOccupation { get; set; }
+        public string? FatherOccupation { get; set; }
+        public string MotherAddress { get; set; }
+        public string FatherAddress { get; set; }
+        
+        //Payment Info
+        public int Total { get; set; }
+        public int Installment { get; set; }
+        public decimal MonthlyAmount
         {
-            this.Name = Name;
-            this.Surname = Surname;
-            this.TcNo = TcNo;
-            this.IsFatherAlive = IsFatherAlive;
-            this.IsMotherAlive = IsMotherAlive;
-            this.TelNo = TelNo;
-            this.StudentGrade = StudentGrade;
-            this.BirthPlaceAndYear = BirthPlaceAndYear;
-            this.StartDate = StartDate;
-            this.BloodType = BloodType;
-            this.Diseases = Diseases;
-            this.Medicines = Medicines;
-            this.School = School;
-            this.Emergency1NameSurname = Emergency1NameSurname;
-            this.Emergency2NameSurname = Emergency2NameSurname;
-            this.Emergency3NameSurname = Emergency3NameSurname;
-            this.Emergency1TelNo = Emergency1TelNo;
-            this.Emergency2TelNo = Emergency2TelNo;
-            this.Emergency3TelNo = Emergency3TelNo;
-            this.Emergency1Relativity = Emergency1Relativity;
-            this.Emergency2Relativity = Emergency2Relativity;
-            this.Emergency3Relativity = Emergency3Relativity;
+            get
+            {
+                if (Installment == 0)
+                {
+                    return Total;
+                }
+                else
+                {
+                    return Total / Installment;
+                }
+            }
         }
+        public string PaymentWeek { get; set; }
+        public bool Cash { get; set; }
+        public bool CreditCard { get; set; }
+        public bool Transfer { get; set; }
+        public int PaidInstallment { get; set; }
+        public void IncreaseInstallment()
+        {
+            PaidInstallment++;
+        }
+
+
+        //Emergency Infos
+        public string? Emergency1NameSurname {get; set; }
+        public string? Emergency1TelNo { get; set; }
+        public string? Emergency1Relativity { get; set; }
+        public string? Emergency2NameSurname { get; set; }
+        public string? Emergency2TelNo { get; set; }
+        public string? Emergency2Relativity { get; set; }
+
+        public string? Emergency3NameSurname { get; set; }
+        public string? Emergency3TelNo { get; set; }
+        public string? Emergency3Relativity { get; set; }
+
+
+        public void SaveChangesToDatabase()
+        {
+            using (var context = new MyDbContext())
+            {
+                try
+                {
+                    Student student = context.students.Find(this.Id); // Replace Id with the actual student identifier
+                    if (student != null)
+                    {
+                        context.SaveChanges();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Handle any potential exceptions that may occur during saving changes
+                    Console.WriteLine("Error saving changes to the database: " + ex.Message);
+                }
+            }
+        }
+
 
     }
 }
